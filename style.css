@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #090b1a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  height: 100vh;
+}
+
+.card {
+  width: 1107px;
+  height: 444px;
+  background-color: #1b1938;
+  border-radius: 10px;
+  display: flex;
+}
+.card .bloc {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 120px 66px 70px;
+}
+.card .bloc h1 {
+  line-height: 1.2em;
+  font-size: 2.35em;
+  margin-bottom: 0.7em;
+  font-weight: bolder;
+}
+.card .bloc h1 span {
+  color: #aa5cdb;
+}
+.card .bloc p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5em;
+  margin-bottom: 3em;
+  font-size: 1.075em;
+}
+.card .bloc .info {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+}
+.card .bloc .info .chiffre {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 0.25em;
+}
+.card .bloc .info .text {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+.card .photo {
+  position: relative;
+  font-size: 0;
+}
+.card .photo .desktop {
+  height: 100%;
+  border-radius: 0px 10px 10px 0px;
+}
+.card .photo .mobile {
+  display: none;
+}
+.card .photo .couleur {
+  font-size: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #aa5cdb;
+  border-radius: 0px 10px 10px 0px;
+  mix-blend-mode: multiply;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    margin: 50px 20px;
+    position: relative;
+    text-align: center;
+    width: 330px;
+    height: 90vh;
+    background-color: #1b1938;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+  }
+  .card .bloc {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .card .bloc h1 {
+    line-height: 1.2em;
+    font-size: 2em;
+    margin-bottom: 0.7em;
+    font-weight: bolder;
+  }
+  .card .bloc h1 span {
+    color: #aa5cdb;
+  }
+  .card .bloc p {
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+  }
+  .card .bloc .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Lexend Deca", sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 20px;
+  }
+  .card .bloc .info .sous_info {
+    margin-top: 10px;
+  }
+  .card .bloc .info .chiffre {
+    font-weight: 700;
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 0.25em;
+  }
+  .card .bloc .info .text {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+  }
+  .card .photo {
+    font-size: 0;
+    height: 240px;
+  }
+  .card .photo .desktop {
+    display: none;
+  }
+  .card .photo .mobile {
+    display: block;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .card .photo .couleur {
+    font-size: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #aa5cdb;
+    border-radius: 0px 10px 10px 0px;
+    mix-blend-mode: multiply;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
